@@ -239,6 +239,7 @@ python2-setuptools
 python2-virtualenv
 qiv
 qt-recordmydesktop
+rawdog
 recordmydesktop
 reiserfsprogs
 ristretto
@@ -270,6 +271,7 @@ system-config-printer
 systemd-sysvcompat
 tar
 tcpdump
+tcsh
 tea
 terminator
 terminus-font

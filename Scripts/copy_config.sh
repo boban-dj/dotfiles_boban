@@ -1,36 +1,46 @@
 #!/bin/bash
 
-# It uses a config file called backup_files, see example
-# The backup directory, BK is also created automatically
-# then it takes the saved dir "BK" and makes a tar file
-# with hostname and date
+# The backup directory, BK is created automatically
+# It tars (compresses) the BK folder, names it hostname-date.tar.gz
+# You can edit the filepaths below, or make a file backup_files
 
-# example 'backup_files' file:
-#
-#/home/boban/.bashrc
-#/home/boban/Desktop
-#/srv/http
-#/etc/ssh
-#/etc/httpd
-#/etc/php
-#/etc/mysql
-#/etc/iptables
+# Usage sudo ./copy_config
+
+touch ./backup_files
+cat <<EOT >> backup_files
+/etc/httpd/conf
+/etc/lightdm
+/etc/makepkg.conf
+/etc/pacman.d/mirrorlist
+/etc/php/php.ini
+/etc/ssh
+/home/boban/.config/xfce4
+/home/boban/.config/Thunar
+/home/boban/Scripts    
+/home/boban/.bash_profile
+/home/boban/.bashrc
+/home/boban/.dir_colors
+/home/boban/.dir_colors_256
+/home/boban/.i3
+/home/boban/.i3status.conf
+/home/boban/.nanorc
+/home/boban/Packages
+/home/boban/Packages.aur
+/home/boban/Scripts
+/home/boban/.xinitrc
+/home/boban/.Xresources
+/home/boban/.Xresources.d
+EOT
 
 
-# It is run as follows:
-#
-#   ~/Scripts/copy_config.sh
-
-
-
-# added pacman package listing for easy install with: 
-# # xargs -a Packages pacman -S --noconfirm --needed
-
+# List pacman and AUR installs for easy install
+# Install all listed like this: 
+# sudo xargs -a Packages pacman -S --noconfirm --needed
 pacman -Qqe | grep -vx "$(pacman -Qqm)" > /home/boban/Packages
-$ pacman -Qqm > /home/boban/Packages.aur
+pacman -Qqm > /home/boban/Packages.aur
+
 
 # reading the file backup_files
-
 if [[ $1 == "-l" ]]
 then
 for i in $(cat ./backup_files)
@@ -104,13 +114,16 @@ date
 echo
 
 # Backup The Files using tar.
-tar -zcvf $dest/$archive_file $backup_files
+tar -zcvf $dest/BK/$archive_file $backup_files
 
 # Print end status message.
 echo
 echo "Backup finished"
 date
 
-# Long listing of files in $dest to check file sizes.
-ls -lh $dest
+# cleanup
+rm -r ./backup_files
 
+# Long listing of files in $dest to check file sizes.
+#ls -lh ./BK
+tree -L 1 ./BK
