@@ -1018,7 +1018,7 @@
         (proc-arg 4 "filename" "The name of the file to save the image in")
         (proc-arg 4 "raw-filename" "The name of the file to save the image in")
         (proc-arg 0 "raw" "Specify non-zero for raw output, zero for ascii output")))
-(plug-in-def "/usr/lib/gimp/2.0/plug-ins/gmic_gimp" 1459265019
+(plug-in-def "/usr/lib/gimp/2.0/plug-ins/gmic_gimp" 1462742388
     (proc-def "plug-in-gmic" 1
          "G'MIC"
          "G'MIC"
@@ -3708,7 +3708,7 @@
          2 0
         (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0) }")
         (proc-arg 13 "image" "Image to print")))
-(plug-in-def "/usr/lib/gimp/2.0/plug-ins/gutenprint" 1452970300
+(plug-in-def "/usr/lib/gimp/2.0/plug-ins/gutenprint" 1460922684
     (proc-def "file_print_gutenprint" 1
          "This plug-in prints images from The GIMP using Gutenprint directly."
          "Prints images to many printers."

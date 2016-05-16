@@ -51,7 +51,7 @@
 <action>
 	<icon>x-office-document</icon>
 	<name>Slugify Filename</name>
-	<unique-id>1456811464107749-5</unique-id>
+	<unique-id>1462519370503977-2</unique-id>
 	<command>for file in %N; do mv &quot;$file&quot; &quot;$(echo &quot;$file&quot; | tr -s &apos; &apos; | tr &apos; A-Z&apos; &apos;-a-z&apos; | tr -s &apos;-&apos; | tr -c &apos;[:alnum:][:cntrl:].&apos; &apos;_&apos;)&quot;; done</command>
 	<description>Rename the currently selected files, making the filenames lower-case &amp; replacing spaces with underscore</description>
 	<patterns>*</patterns>

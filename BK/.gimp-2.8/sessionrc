@@ -11,8 +11,8 @@
     (size 1680 964))
 (session-info "toplevel"
     (factory-entry "gimp-single-image-window")
-    (position 1680 18)
-    (size 1596 1160)
+    (position 0 48)
+    (size 1676 948)
     (open-on-exit)
     (aux-info
         (left-docks-width "264")
@@ -102,7 +102,7 @@
                     (edit-active "true")
                     (current-data "1. Pixel"))))
         (book
-            (position 451)
+            (position 471)
             (current-page 3)
             (dockable "gimp-brush-grid"
                 (tab-style automatic)
@@ -121,7 +121,7 @@
                 (aux-info
                     (current-page "ColorselWheel"))))
         (book
-            (position 730)
+            (position 806)
             (current-page 0)
             (dockable "gimp-palette-editor"
                 (tab-style icon)
@@ -134,17 +134,17 @@
     (position 351 198))
 (session-info "toplevel"
     (factory-entry "gimp-image-new-dialog")
-    (position 2339 469))
+    (position 2335 469))
 (session-info "toplevel"
     (factory-entry "gimp-toolbox-color-dialog")
     (position 0 0))
 (session-info "toplevel"
     (factory-entry "gimp-file-save-dialog")
-    (position 185 73)
+    (position 177 73)
     (size 780 675))
 (session-info "toplevel"
     (factory-entry "gimp-file-export-dialog")
-    (position 477 261)
+    (position 475 261)
     (size 780 675))
 (session-info "toplevel"
     (factory-entry "gimp-file-open-dialog")
@@ -155,7 +155,7 @@
     (position 827 508))
 (session-info "toplevel"
     (factory-entry "gimp-scale-tool-dialog")
-    (position 2224 866))
+    (position 2214 866))
 (session-info "toplevel"
     (factory-entry "gimp-colorize-tool-dialog")
     (position 0 0))
@@ -170,7 +170,7 @@
     (position 1802 738))
 (session-info "toplevel"
     (factory-entry "gimp-brightness-contrast-tool-dialog")
-    (position 1873 663))
+    (position 0 0))
 (session-info "toplevel"
     (factory-entry "gimp-levels-tool-dialog")
     (position 1790 260)
@@ -198,7 +198,7 @@
     (size 466 621))
 (session-info "toplevel"
     (factory-entry "gimp-shear-tool-dialog")
-    (position 1751 292))
+    (position 1749 292))
 (session-info "toplevel"
     (factory-entry "gimp-colormap-editor-color-dialog")
     (position 2834 445))

@@ -222,7 +222,11 @@ lso() {
 alias xclip='xclip -selection c'
 ################################################################################
 # SSH
-
+## ssh connect with boya-creations.nl
+alias boya='ssh -p 4000 boyacr1q@boya-creations.nl'
+alias linkandtrust='ssh -p 4000 linkan1q@link-and-trust.com'
+alias petya='ssh -p 4000 boban@petya.nl'
+alias vps='ssh -p 1919 boban@149.210.226.123'
 
 ################################################################################
 # APACHE
@@ -591,6 +595,7 @@ screendec_better () {
 ## YOUTUBE-DL
 alias yt_title="youtube-dl --write-description --write-thumbnail -o '%(title)s/%(title)s-%(id)s.%(ext)s'"
 alias yt_uploader="youtube-dl --write-description --write-thumbnail -o '%(uploader)s/%(title)s-%(id)s.%(ext)s'"
+alias yt_audio="youtube-dl -x --audio-format mp3 -o '%(title)s/%(title)s-%(id)s.%(ext)s'"
 
 ################################################################################
 ## SCREENSHOT WITH MAIM AND SLOP 
@@ -819,3 +824,13 @@ alias myip='curl -s http://whatismijnip.nl |cut -d " " -f 5'
 #################################################################################
 #Go Path
 export GOPATH=~/go
+
+# MANPAGER
+
+export PAGER="/usr/bin/less -X"
+
+################################################################################
+## Slugify filenames-foldernames
+function slugify () {
+	for file in . ; do mv "$file" "$(echo "$file" | tr -s ' ' | tr ' A-Z' '-a-z' | tr -s '-' | tr -c '[:alnum:][:cntrl:].' '_')"; done
+}

@@ -131,6 +131,7 @@ intltool
 iproute2
 iputils
 jfsutils
+john
 kismet
 less
 lib32-alsa-plugins
@@ -158,6 +159,7 @@ lvm2
 lxsession
 lynx
 m4
+macchanger
 maim
 make
 man-db
@@ -319,6 +321,7 @@ virtualbox-host-dkms
 vlc
 when
 which
+whois
 wine
 wine-mono
 wine_gecko
@@ -326,6 +329,7 @@ winetricks
 wireshark-cli
 wireshark-gtk
 wxgtk2.8
+x2goclient
 xclip
 xcursor-neutral
 xcursor-vanilla-dmz
@@ -385,6 +389,7 @@ xorg-server-devel
 xorg-server-utils
 xorg-xinit
 xorg-xwininfo
+xpdf
 xterm
 youtube-dl
 zenity

@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
-recent=xfce-ui-settings.desktop,bluefish.desktop,geeqie.desktop,gv.desktop,gnash.desktop,xfce4-appfinder.desktop,org.gnome.font-viewer.desktop,xfce4-screenshooter.desktop,hplip.desktop,simplescreenrecorder.desktop
+recent=gv.desktop,pencil2d.desktop,xfce-ui-settings.desktop,bluefish.desktop,geeqie.desktop,gnash.desktop,xfce4-appfinder.desktop,org.gnome.font-viewer.desktop,xfce4-screenshooter.desktop,hplip.desktop
 button-title=Applications
 button-icon=xfce4-whiskermenu
 button-single-row=false
